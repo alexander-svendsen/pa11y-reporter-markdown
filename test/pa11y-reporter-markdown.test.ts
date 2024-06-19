@@ -1,14 +1,15 @@
-import DummyClass from "../src/pa11y-reporter-markdown";
+import markdownReporter from "../src/pa11y-reporter-markdown";
 
 /**
  * Dummy test
  */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy();
-  });
-
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass);
+describe("pa11y-reporter-markdown", () => {
+  it("must have the properties: supports, begin, error, debug, info, result", () => {
+    expect(markdownReporter).toHaveProperty("supports")
+    expect(markdownReporter).toHaveProperty("begin")
+    expect(markdownReporter).toHaveProperty("error")
+    expect(markdownReporter).toHaveProperty("debug")
+    expect(markdownReporter).toHaveProperty("info")
+    expect(markdownReporter).toHaveProperty("result")
   });
 });
