@@ -1,4 +1,5 @@
 import markdownReporter from "../src/pa11y-reporter-markdown";
+const semver = require('semver')
 
 /**
  * Dummy test
@@ -10,6 +11,12 @@ describe("pa11y-reporter-markdown", () => {
     expect(markdownReporter).toHaveProperty("error")
     expect(markdownReporter).toHaveProperty("debug")
     expect(markdownReporter).toHaveProperty("info")
-    expect(markdownReporter).toHaveProperty("result")
+    expect(markdownReporter).toHaveProperty("results")
+  });
+
+  it("has set supports to a valid pa11y version", () => {
+    expect(semver.satisfies('8.2.0', markdownReporter.supports)).toBeTruthy()
+    expect(semver.satisfies('8.1.0', markdownReporter.supports)).toBeTruthy()
+    expect(semver.satisfies('9.0.0', markdownReporter.supports)).toBeFalsy()
   });
 });
