@@ -1,4 +1,4 @@
-import markdownReporter from "../src/pa11y-reporter-markdown";
+import * as markdownReporter from "../src/pa11y-reporter-markdown";
 const semver = require('semver')
 
 /**

@@ -2,13 +2,14 @@
   "name": "pa11y-reporter-markdown",
   "version": "0.0.0",
   "description": "An markdown reporter for pa11y",
-  "main": "dist/index.js",
+  "main": "./dist/src/pa11y-reporter-markdown.js",
+  "typings": "./dist/types/pa11y-reporter-markdown.d.ts",
   "author": "alexander-svendsen",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
   },
-  "type": "module",
+  "type": "commonjs",
   "files": [
     "dist"
   ],

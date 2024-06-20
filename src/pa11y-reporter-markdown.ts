@@ -22,4 +22,6 @@ const results = (result: string) => {
   return ""
 };
 
-export default {supports, begin, error, debug, info, results}
+// kan jeg få til å både exporte objectet og en function her?
+// jeg både ståtter pally og pally-ci ?
+export {supports, begin, error, debug, info, results}
