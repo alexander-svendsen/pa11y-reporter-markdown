@@ -13,6 +13,9 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "url": "https://github.com/alexander-svendsen/pa11y-reporter-markdown"
+  },
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
