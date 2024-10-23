@@ -1,6 +1,6 @@
 {
   "name": "pa11y-reporter-markdown",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An markdown reporter for pa11y",
   "main": "./dist/src/pa11y-reporter-markdown.js",
   "typings": "./dist/types/pa11y-reporter-markdown.d.ts",
