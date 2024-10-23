@@ -25,10 +25,10 @@ const results = (result: Result) => {
   const notice = result.issues.filter(issue => issue.type === 'notice');
 
   const details = result.issues.map(issue =>
-    `## **${issue.type}:** ${issue.message}\n` +
+    `### **${issue.type}:** ${issue.message}\n` +
     `${issue.code}\n` +
-    `${issue.context} (select with "${issue.selector})"\n\n`
-  ).join(``)
+    `${issue.context} (select with: ${issue.selector})`
+  ).join(`\n\n`)
 
   return `# Accessibility Report For ${pageUrl}` +
     `\n` +
