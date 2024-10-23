@@ -43,6 +43,4 @@ const results = (result: Result) => {
     `${details}`
 };
 
-// kan jeg få til å både exporte objectet og en function her?
-// jeg både ståtter pally og pally-ci ?
 export {supports, error, results}
